@@ -1,11 +1,21 @@
 manifest:
   remotes:
     - name: zmkfirmware
+<<<<<<< Updated upstream
       url-base: https://github.com/ALpotato
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: ptdevice-alpotato
+=======
+      url-base: https://github.com/zmkfirmware
+    - name: inorichi
+      url-base: https://github.com/inorichi
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+>>>>>>> Stashed changes
       import: app/west.yml
   self:
     path: config
