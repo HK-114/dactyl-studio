@@ -11,7 +11,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Charybdis";
 
-        kscan = <&kscan0>;
+        kscan = <&mock_kscan>;
         transform = <&matrix_transform0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
@@ -147,7 +147,7 @@
 
 	transform = <&default_transform>;
 
-	kscan = <&kscan0>;
+	kscan = <&mock_kscan>;
 
 };
 
