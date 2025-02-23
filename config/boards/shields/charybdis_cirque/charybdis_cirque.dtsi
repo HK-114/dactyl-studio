@@ -2,7 +2,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    physical_layout0: physical_layout_0 {
+    Charybdis_layout: Charybdis_layout {
         compatible = "zmk,physical-layout";
         display-name = "Charybdis";
 
@@ -92,7 +92,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layouts = &physical_layout_0;
+        zmk,physical-layouts = &Charybdis_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -126,7 +126,7 @@
 	};
 };
 
-&physical_layout_0{
+&Charybdis_layout{
 
 	transform = <&default_transform>;
 
