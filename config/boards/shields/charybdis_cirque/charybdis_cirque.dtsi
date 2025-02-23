@@ -4,7 +4,7 @@
 / {
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
-        display-name = "default_layout";
+        display-name = "Charybdis";
 
         kscan = <&kscan0>;
         transform = <&matrix_transform0>;
