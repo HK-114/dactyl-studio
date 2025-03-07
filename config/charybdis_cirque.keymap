@@ -1,7 +1,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
@@ -16,7 +15,7 @@
         zspace: z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Z &kp SPACE &kp ENTER>;
+            bindings = <&qcsxxn Z &qcsxxn SPACE &qcsxxn ENTER>;
             label = "Z";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -25,7 +24,7 @@
         ctrltab: ctrltab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(TAB)>;
+            bindings = <&qcsxxn LC(TAB)>;
             label = "CTRLTAB";
             wait-ms = <50>;
             tap-ms = <50>;
@@ -34,7 +33,7 @@
         hpfx: hpfx {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp C &kp P &kp K &kp F &kp J &kp X &kp M &kp SPACE>;
+            bindings = <&qcsxxn H &qcsxxn C &qcsxxn P &qcsxxn K &qcsxxn F &qcsxxn J &qcsxxn X &qcsxxn M &qcsxxn SPACE>;
             label = "HPFX";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -43,7 +42,7 @@
         tcj: tcj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp V &kp I &kp A &kp J &kp X &kp SPACE>;
+            bindings = <&qcsxxn T &qcsxxn V &qcsxxn I &qcsxxn A &qcsxxn J &qcsxxn X &qcsxxn SPACE>;
             label = "TCJ";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -52,16 +51,16 @@
         bthbc: bthbc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp B &kp U &kp T &kp V &kp H &kp O &kp B &kp U &kp I &kp H &kp SPACE>;
+            bindings = <&qcsxxn B &qcsxxn U &qcsxxn T &qcsxxn V &qcsxxn H &qcsxxn O &qcsxxn B &qcsxxn U &qcsxxn I &qcsxxn H &qcsxxn SPACE>;
             label = "BTHBC";
             wait-ms = <5>;
             tap-ms = <5>;
         };
 
-        kp: QCS {
+        qcsxxn: QCS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp I &kp K &kp D &kp J &kp U &kp COMMA &kp Q &kp K &kp I &kp A &kp U &kp Z &kp COMMA &kp X &kp P &kp X &kp P &kp N &kp B &kp EXCL>;
+            bindings = <&qcsxxn Y &qcsxxn I &qcsxxn K &qcsxxn D &qcsxxn J &qcsxxn U &qcsxxn COMMA &qcsxxn Q &qcsxxn K &qcsxxn I &qcsxxn A &qcsxxn U &qcsxxn Z &qcsxxn COMMA &qcsxxn X &qcsxxn P &qcsxxn X &qcsxxn P &qcsxxn N &qcsxxn B &qcsxxn EXCL>;
             label = "QCS";
             wait-ms = <10>;
             tap-ms = <10>;
@@ -70,7 +69,7 @@
         bz2: bz2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp B &kp Z &kp NUMBER_2>;
+            bindings = <&qcsxxn B &qcsxxn Z &qcsxxn NUMBER_2>;
             label = "BZ2";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -79,7 +78,7 @@
         altzz: altzz {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(Z)>;
+            bindings = <&qcsxxn LA(Z)>;
             label = "ALTZZ";
             wait-ms = <5>;
             tap-ms = <5>;
@@ -88,21 +87,21 @@
         kfpj: kfpj {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K &kp E &kp F &kp U &kp P &kp K &kp J &kp X &kp SPACE>;
+            bindings = <&qcsxxn K &qcsxxn E &qcsxxn F &qcsxxn U &qcsxxn P &qcsxxn K &qcsxxn J &qcsxxn X &qcsxxn SPACE>;
             label = "KFPJ";
         };
 
         fw2: fw2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F &kp W &kp N2>;
+            bindings = <&qcsxxn F &qcsxxn W &qcsxxn N2>;
             label = "FW2";
         };
 
         qcs: qcs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Q &kp K &kp I &kp A &kp U &kp Z &kp COMMA &kp X &kp P &kp X &kp P &kp N &kp B>;
+            bindings = <&qcsxxn Q &qcsxxn K &qcsxxn I &qcsxxn A &qcsxxn U &qcsxxn Z &qcsxxn COMMA &qcsxxn X &qcsxxn P &qcsxxn X &qcsxxn P &qcsxxn N &qcsxxn B>;
             label = "QCS";
         };
     };
@@ -139,7 +138,7 @@
         hml: howerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOWEROW_MODS_LEFT";
-            bindings = <&kp>, <&kp>;
+            bindings = <&qcsxxn>, <&qcsxxn>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -153,7 +152,7 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
-            bindings = <&kp>, <&kp>;
+            bindings = <&qcsxxn>, <&qcsxxn>;
 
             #binding-cells = <2>;
             tapping-term-ms = <250>;
@@ -169,48 +168,48 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3  &kp N4         &kp N5        &kp UP_ARROW    &kp MINUS      &kp N6        &kp N7     &kp N8    &kp N9      &kp N0      &kp BSPC
-&kp TAB     &kp Q         &kp W         &kp E   &kp R          &kp T         &kp DOWN_ARROW  &kp EQUAL      &kp Y         &kp U      &kp I     &kp O       &kp P       &kp MINUS
-&mo 1       &kp A         &kp S         &kp D   &kp F          &kp G         &kp BACKSPACE   &kp BACKSPACE  &kp H         &kp J      &kp K     &kp L       &kp COLON   &kp EQUAL
-&kp LSHIFT  &hml Z LCTRL  &kp X         &kp C   &kp V          &kp B                                        &kp KP_SLASH  &kp N      &kp M     &kp COMMA   &kp PERIOD  &kp TILDE
-&kp LCTRL   &kp N0        &bz2          &altzz  &kp SPACE      &kp ENTER                                    &kp ENTER     &kp SPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
-                          &kp LEFT_ALT  &mo 1   &kp BACKSPACE  &kp LEFT_GUI                                 &mo 3         &mo 2      &kp LEFT  &kp RIGHT
+&qcsxxn ESC     &qcsxxn N1    &qcsxxn N2        &qcsxxn N3  &qcsxxn N4         &qcsxxn N5        &qcsxxn UP_ARROW    &qcsxxn MINUS      &qcsxxn N6        &qcsxxn N7     &qcsxxn N8    &qcsxxn N9      &qcsxxn N0      &qcsxxn BSPC
+&qcsxxn TAB     &qcsxxn Q     &qcsxxn W         &qcsxxn E   &qcsxxn R          &qcsxxn T         &qcsxxn DOWN_ARROW  &qcsxxn EQUAL      &qcsxxn Y         &qcsxxn U      &qcsxxn I     &qcsxxn O       &qcsxxn P       &qcsxxn MINUS
+&mo 1           &qcsxxn A     &qcsxxn S         &qcsxxn D   &qcsxxn F          &qcsxxn G         &qcsxxn BACKSPACE   &qcsxxn BACKSPACE  &qcsxxn H         &qcsxxn J      &qcsxxn K     &qcsxxn L       &qcsxxn COLON   &qcsxxn EQUAL
+&qcsxxn LSHIFT  &hml Z LCTRL  &qcsxxn X         &qcsxxn C   &qcsxxn V          &qcsxxn B                                                &qcsxxn KP_SLASH  &qcsxxn N      &qcsxxn M     &qcsxxn COMMA   &qcsxxn PERIOD  &qcsxxn TILDE
+&qcsxxn LCTRL   &qcsxxn N0    &bz2              &altzz      &qcsxxn SPACE      &qcsxxn ENTER                                            &qcsxxn ENTER     &qcsxxn SPACE  &mo 1         &qcsxxn KP_DOT  &mo 2           &mo 3
+                              &qcsxxn LEFT_ALT  &mo 1       &qcsxxn BACKSPACE  &qcsxxn LEFT_GUI                                         &mo 3             &mo 2          &qcsxxn LEFT  &qcsxxn RIGHT
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-&none  &kp F1         &kp F2          &kp F3          &kp F4           &kp F5    &none   &kp F12  &kp F6        &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&none  &kp LA(LC(Q))  &caps_word      &kp UP_ARROW    &none            &kp       &bthbc  &none    &none         &none           &kp UP_ARROW    &none            &none    &kp F12
-&none  &kp LA(A)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &tcj      &hpfx   &none    &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
-&none  &none          &none           &none           &zspace          &ctrltab                   &kp QUESTION  &none           &kp QUESTION    &none            &none    &none
-&none  &none          &none           &none           &none            &none                      &none         &none           &none           &none            &none    &none
-                      &none           &kp BSPC        &kp BSPC         &none                      &none         &none           &none           &none
+&none  &qcsxxn F1         &qcsxxn F2          &qcsxxn F3          &qcsxxn F4           &qcsxxn F5  &none   &qcsxxn F12  &qcsxxn F6        &qcsxxn F7          &qcsxxn F8          &qcsxxn F9           &qcsxxn F10  &qcsxxn F11
+&none  &qcsxxn LA(LC(Q))  &caps_word          &qcsxxn UP_ARROW    &none                &qcsxxn     &bthbc  &none        &none             &none               &qcsxxn UP_ARROW    &none                &none        &qcsxxn F12
+&none  &qcsxxn LA(A)      &qcsxxn LEFT_ARROW  &qcsxxn DOWN_ARROW  &qcsxxn RIGHT_ARROW  &tcj        &hpfx   &none        &none             &qcsxxn LEFT_ARROW  &qcsxxn DOWN_ARROW  &qcsxxn RIGHT_ARROW  &none        &none
+&none  &none              &none               &none               &zspace              &ctrltab                         &qcsxxn QUESTION  &none               &qcsxxn QUESTION    &none                &none        &none
+&none  &none              &none               &none               &none                &none                            &none             &none               &none               &none                &none        &none
+                          &none               &qcsxxn BSPC        &qcsxxn BSPC         &none                            &none             &none               &none               &none
             >;
         };
 
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&none         &none         &none      &none  &none  &none  &none  &none  &none     &none     &none              &none      &none              &none
-&none         &none         &none      &none  &none  &none  &none  &none  &none     &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
-&kp C_BRI_UP  &kp C_BRI_DN  &none      &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
-&none         &none         &none      &none  &none  &none                &none     &none     &none              &none      &kp C_PLAY_PAUSE   &none
-&none         &none         &none      &none  &none  &none                &none     &none     &none              &none      &none              &none
-                            &kp LSHFT  &none  &none  &none                &kp C_RW  &kp C_FF  &none              &none
+&none             &none             &none          &none  &none  &none  &none  &none  &none         &none         &none                  &none          &none                  &none
+&none             &none             &none          &none  &none  &none  &none  &none  &none         &none         &qcsxxn C_VOLUME_UP    &none          &qcsxxn C_VOLUME_UP    &qcsxxn C_PREVIOUS
+&qcsxxn C_BRI_UP  &qcsxxn C_BRI_DN  &none          &none  &none  &none  &none  &none  &qcsxxn LEFT  &qcsxxn DOWN  &qcsxxn C_VOLUME_DOWN  &qcsxxn RIGHT  &qcsxxn C_VOLUME_DOWN  &qcsxxn C_NEXT
+&none             &none             &none          &none  &none  &none                &none         &none         &none                  &none          &qcsxxn C_PLAY_PAUSE   &none
+&none             &none             &none          &none  &none  &none                &none         &none         &none                  &none          &none                  &none
+                                    &qcsxxn LSHFT  &none  &none  &none                &qcsxxn C_RW  &qcsxxn C_FF  &none                  &none
             >;
         };
 
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bt BT_CLR    &none  &out OUT_USB  &none         &none  &none         &none         &none
-&none          &none         &none         &none         &none         &none  &out OUT_USB  &none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none          &none         &none         &none         &none         &none  &out OUT_BLE  &none  &out OUT_USB  &none         &none  &none         &none         &none
-&kp BACKSPACE  &none         &none         &none         &none         &none                       &out OUT_BLE  &none         &none  &none         &none         &kp BACKSPACE
-&none          &none         &none         &bootloader   &none         &none                       &none         &none         &none  &none         &none         &kp B
-                             &none         &none         &none         &none                       &none         &none         &none  &none
+&bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bt BT_CLR    &none  &out OUT_USB  &none         &none  &none         &none         &none
+&none              &none         &none         &none         &none         &none  &out OUT_USB  &none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none              &none         &none         &none         &none         &none  &out OUT_BLE  &none  &out OUT_USB  &none         &none  &none         &none         &none
+&qcsxxn BACKSPACE  &none         &none         &none         &none         &none                       &out OUT_BLE  &none         &none  &none         &none         &qcsxxn BACKSPACE
+&none              &none         &none         &bootloader   &none         &none                       &none         &none         &none  &none         &none         &qcsxxn B
+                                 &none         &none         &none         &none                       &none         &none         &none  &none
             >;
         };
     };
