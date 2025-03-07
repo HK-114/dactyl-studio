@@ -191,7 +191,7 @@
         two {
             label = "SYMBOL";
             bindings = <
-&kp A  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp B  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
