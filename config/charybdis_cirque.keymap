@@ -167,12 +167,12 @@
         zero {
             label = "DEFAULT";
             bindings = <
-&kp ESC    &kp N1               &kp N2  &kp N3  &kp N4        &kp N5        &none  &none  &kp N6     &kp N7         &kp N8  &kp N9      &kp N0            &kp BACKSPACE
-&kp ESC    &kp Q                &kp W   &kp E   &kp R         &kp T         &none  &none  &kp Y      &kp U          &kp I   &kp P       &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&mo 1      &kp A                &kp S   &kp D   &kp F         &kp G         &none  &none  &kp H      &kp J          &kp K   &kp L       &kp SEMICOLON     &kp DOUBLE_QUOTES
-&kp TAB    &kp Z                &kp X   &kp C   &kp V         &kp B                       &kp SLASH  &kp N          &kp M   &kp COMMA   &kp PERIOD        &kp DELETE
-&kp LCTRL  &hml LEFT_ALT LCTRL  &bz2    &altzz  &kp LEFT_ALT  &kp SPACE                   &kp ENTER  &kp BACKSPACE  &mo 1   &kp KP_DOT  &mo 2             &mo 3
-                                &none   &mo 1   &kp LEFT_GUI  &kp CAPSLOCK                &mo 3      &mo 2          &none   &none
+&kp ESC    &kp N1               &kp N2  &kp N3  &kp N4        &kp N5        &none  &none  &kp N6     &kp N7         &kp N8        &kp N9          &kp N0            &kp BACKSPACE
+&kp ESC    &kp Q                &kp W   &kp E   &kp R         &kp T         &none  &none  &kp Y      &kp U          &kp I         &kp P           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&mo 1      &kp A                &kp S   &kp D   &kp F         &kp G         &none  &none  &kp H      &kp J          &kp K         &kp L           &kp SEMICOLON     &kp DOUBLE_QUOTES
+&kp TAB    &kp Z                &kp X   &kp C   &kp V         &kp B                       &kp SLASH  &kp N          &kp M         &kp COMMA       &kp PERIOD        &kp DELETE
+&kp LCTRL  &hml LEFT_ALT LCTRL  &bz2    &altzz  &kp LEFT_ALT  &kp SPACE                   &kp ENTER  &kp BACKSPACE  &mo 1         &kp KP_DOT      &mo 2             &mo 3
+                                &none   &mo 1   &kp LEFT_GUI  &kp CAPSLOCK                &mo 3      &mo 2          &kp UP_ARROW  &kp DOWN_ARROW
             >;
         };
 
@@ -191,7 +191,7 @@
         two {
             label = "SYMBOL";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&kp A  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                &none  &none  &none  &none  &none  &none
