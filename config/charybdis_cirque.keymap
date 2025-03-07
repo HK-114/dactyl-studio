@@ -58,7 +58,7 @@
             tap-ms = <5>;
         };
 
-        ykj: QCS {
+        kp: QCS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Y &kp I &kp K &kp D &kp J &kp U &kp COMMA &kp Q &kp K &kp I &kp A &kp U &kp Z &kp COMMA &kp X &kp P &kp X &kp P &kp N &kp B &kp EXCL>;
@@ -97,6 +97,13 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp W &kp N2>;
             label = "FW2";
+        };
+
+        qcs: qcs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp K &kp I &kp A &kp U &kp Z &kp COMMA &kp X &kp P &kp X &kp P &kp N &kp B>;
+            label = "QCS";
         };
     };
 
@@ -175,7 +182,7 @@
             label = "NUMBER";
             bindings = <
 &none  &kp F1         &kp F2          &kp F3          &kp F4           &kp F5    &none   &kp F12  &kp F6        &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&none  &kp LA(LC(Q))  &caps_word      &kp UP_ARROW    &none            &ykj      &bthbc  &none    &none         &none           &kp UP_ARROW    &none            &none    &kp F12
+&none  &kp LA(LC(Q))  &caps_word      &kp UP_ARROW    &none            &kp       &bthbc  &none    &none         &none           &kp UP_ARROW    &none            &none    &kp F12
 &none  &kp LA(A)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &tcj      &hpfx   &none    &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
 &none  &none          &none           &none           &zspace          &ctrltab                   &kp QUESTION  &none           &kp QUESTION    &none            &none    &none
 &none  &none          &none           &none           &none            &none                      &none         &none           &none           &none            &none    &none
